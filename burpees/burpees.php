@@ -1,7 +1,8 @@
 <?php
 
-$c = 1;
+$c = 0;
 $oldi = 0;
+$overall = 0;
 for ($i = 1 ; $i <= 100 ; $i++) {
   
   for ($j = 1 ; $j <= $i ; $j++) {
@@ -15,7 +16,8 @@ for ($i = 1 ; $i <= 100 ; $i++) {
       echo ' *** new ***';
       $oldi = $i;
     }
-    echo "\n";
+    $overall += $i;
+    echo " (overall $overall)\n";
     
     $c++;
   
