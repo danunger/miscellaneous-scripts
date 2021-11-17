@@ -20,6 +20,7 @@ for ($i = 1 ; $i <= 100 ; $i++) {
     echo " (overall $overall)\n";
     
     $c++;
+//    if ($overall >= 1000000) break 2;
   
   }
 
