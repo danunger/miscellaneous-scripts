@@ -3,6 +3,7 @@
 $c = 0;
 $oldi = 0;
 $overall = 0;
+$total100 = 338350;
 for ($i = 1 ; $i <= 100 ; $i++) {
   
   for ($j = 1 ; $j <= $i ; $j++) {
@@ -17,7 +18,8 @@ for ($i = 1 ; $i <= 100 ; $i++) {
       $oldi = $i;
     }
     $overall += $i;
-    echo " (overall $overall)\n";
+    $pctoverall = ($overall * 100) / $total100;
+    echo " (overall $overall " . number_format($pctoverall, 3) . "%)\n";
     
     $c++;
 //    if ($overall >= 1000000) break 2;
